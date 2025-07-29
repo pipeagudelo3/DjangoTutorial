@@ -1,0 +1,45 @@
+{% extends 'pages/base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block header_title %}{{ subtitle }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  {% if errors %}
+    <div class="alert alert-danger">
+      <ul>
+        {% for error in errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if product %}
+    <div class="alert alert-success">
+      Product created successfully:
+      <ul>
+        <li><strong>Name:</strong> {{ product.name }}</li>
+        <li><strong>Description:</strong> {{ product.description }}</li>
+        <li><strong>Price:</strong> ${{ product.price }}</li>
+      </ul>
+    </div>
+  {% endif %}
+
+  <form method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label class="form-label">Name:</label>
+      <input name="name" type="text" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Description:</label>
+      <textarea name="description" class="form-control" required></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Price:</label>
+      <input name="price" type="number" step="0.01" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+  </form>
+</div>
+{% endblock %}

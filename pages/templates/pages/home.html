@@ -1,0 +1,281 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}Home Page - Online Store{% endblock %}
+{% block header_title %}Welcome!{% endblock %}
+{% block content %}
+  <div class="text-center">
+    Welcome to the application
+  </div>
+{% endblock %}
+{% block footer %}
+  <div class="text-center">
+    &copy; 2023 Online Store
+  </div>
+{% endblock %}
+{% block scripts %}
+  <script>
+    console.log("Home page scripts loaded.");
+  </script>
+{% endblock %}
+{% block styles %}
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .text-center {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+{% endblock %}
+{% block extra_content %}
+  <div class="extra-content">
+    <p>This is some additional content for the home page.</p>
+  </div>
+{% endblock %}
+{% block sidebar %}
+  <div class="sidebar">
+    <h3>Sidebar</h3>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  </div>
+{% endblock %}
+{% block main_content %}
+  <div class="main-content">
+    <h2>Main Content Area</h2>
+    <p>This is where the main content of the home page will go.</p>
+  </div>
+{% endblock %}
+{% block footer_links %}
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a> | 
+    <a href="#">Terms of Service</a>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}
+{% block additional_styles %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{% endblock %}
+{% block custom_css %}
+  <style>
+    .custom-style {
+      color: #333;
+      font-size: 1.2em;
+    }
+  </style>
+{% endblock %}
+{% block custom_js %}
+  <script>
+    $(document).ready(function() {
+      $('.custom-style').click(function() {
+        alert('Custom style clicked!');
+      });
+    });
+  </script>
+{% endblock %}
+{% block custom_html %}
+  <div class="custom-html">
+    <h3>Custom HTML Section</h3>
+    <p>This section can contain any custom HTML content.</p>
+  </div>
+{% endblock %}
+{% block custom_block %}
+  <div class="custom-block">
+    <h4>Custom Block</h4>
+    <p>This is a custom block that can be used for additional content.</p>
+  </div>
+{% endblock %}
+{% block custom_footer %}
+  <div class="custom-footer">
+    <p>Custom footer content goes here.</p>
+  </div>
+{% endblock %}
+{% block custom_sidebar %}
+  <div class="custom-sidebar">
+    <h3>Custom Sidebar</h3>
+    <p>This sidebar can contain additional links or information.</p>
+  </div>
+{% endblock %}
+{% block custom_main_content %}
+  <div class="custom-main-content">
+    <h2>Custom Main Content</h2>
+    <p>This area can be used for any custom main content.</p>
+  </div>
+{% endblock %}
+{% block custom_header %}
+  <div class="custom-header">
+    <h1>Custom Header</h1>
+    <p>This header can be customized as needed.</p>
+  </div>
+{% endblock %}
+{% block custom_title %}
+  <title>Custom Title - Online Store</title>
+{% endblock %}
+{% block custom_meta %}
+  <meta name="description" content="This is a custom meta description for the home page.">
+{% endblock %}
+{% block custom_links %}
+  <link rel="stylesheet" href="https://example.com/custom-styles.css">
+{% endblock %}
+{% block custom_scripts %}
+  <script src="https://example.com/custom-scripts.js"></script>
+{% endblock %}
+{% block custom_content %}
+  <div class="custom-content">
+    <p>This is a custom content area that can be used for any purpose.</p>
+  </div>
+{% endblock %}
+{% block custom_section %}
+  <section class="custom-section">
+    <h2>Custom Section</h2>
+    <p>This section can be used for any additional content or features.</p>
+  </section>
+{% endblock %}
+{% block custom_div %}
+  <div class="custom-div">
+    <h3>Custom Div</h3>
+    <p>This div can contain any custom HTML or content.</p>
+  </div>
+{% endblock %}
+{% block custom_article %}
+  <article class="custom-article">
+    <h4>Custom Article</h4>
+    <p>This article can be used for blog posts or news updates.</p>
+  </article>
+{% endblock %}
+{% block custom_aside %}
+  <aside class="custom-aside">
+    <h3>Custom Aside</h3>
+    <p>This aside can contain additional information or links.</p>
+  </aside>
+{% endblock %}
+{% block custom_nav %}
+  <nav class="custom-nav">
+    <ul>
+      <li><a href="#">Custom Link 1</a></li>
+      <li><a href="#">Custom Link 2</a></li>
+      <li><a href="#">Custom Link 3</a></li>
+    </ul>
+  </nav>
+{% endblock %}
+{% block custom_footer_links %}
+  <div class="custom-footer-links">
+    <a href="#">Custom Privacy Policy</a> | 
+    <a href="#">Custom Terms of Service</a>
+  </div>
+{% endblock %}
+{% block custom_footer_content %}
+  <div class="custom-footer-content">
+    <p>Custom footer content can be placed here.</p>
+  </div>
+{% endblock %}
+{% block custom_header_content %}
+  <div class="custom-header-content">
+    <h1>Custom Header Content</h1>
+    <p>This area can be customized as needed.</p>
+  </div>
+{% endblock %}
+{% block custom_main_section %}
+  <section class="custom-main-section">
+    <h2>Custom Main Section</h2>
+    <p>This section can be used for any main content.</p>
+  </section>
+{% endblock %}
+{% block custom_sidebar_content %}
+  <div class="custom-sidebar-content">
+    <h3>Custom Sidebar Content</h3>
+    <p>This sidebar can contain additional links or information.</p>
+  </div>
+{% endblock %}
+{% block custom_page_content %}
+  <div class="custom-page-content">
+    <h2>Custom Page Content</h2>
+    <p>This area can be used for any custom page content.</p>
+  </div>
+{% endblock %}
+{% block custom_page_section %}
+  <section class="custom-page-section">
+    <h2>Custom Page Section</h2>
+    <p>This section can be used for any additional content or features.</p>
+  </section>
+{% endblock %}
+{% block custom_page_div %}
+  <div class="custom-page-div">
+    <h3>Custom Page Div</h3>
+    <p>This div can contain any custom HTML or content.</p>
+  </div>
+{% endblock %}
+{% block custom_page_article %}
+  <article class="custom-page-article">
+    <h4>Custom Page Article</h4>
+    <p>This article can be used for blog posts or news updates.</p>
+  </article>
+{% endblock %}
+{% block custom_page_aside %}
+  <aside class="custom-page-aside">
+    <h3>Custom Page Aside</h3>
+    <p>This aside can contain additional information or links.</p>
+  </aside>
+{% endblock %}
+{% block custom_page_nav %}
+  <nav class="custom-page-nav">
+    <ul>
+      <li><a href="#">Custom Page Link 1</a></li>
+      <li><a href="#">Custom Page Link 2</a></li>
+      <li><a href="#">Custom Page Link 3</a></li>
+    </ul>
+  </nav>
+{% endblock %}
+{% block custom_page_footer_links %}
+  <div class="custom-page-footer-links">
+    <a href="#">Custom Page Privacy Policy</a> | 
+    <a href="#">Custom Page Terms of Service</a>
+  </div>
+{% endblock %}
+{% block custom_page_footer_content %}
+  <div class="custom-page-footer-content">
+    <p>Custom page footer content can be placed here.</p>
+  </div>
+{% endblock %}
+{% block custom_page_header_content %}
+  <div class="custom-page-header-content">
+    <h1>Custom Page Header Content</h1>
+    <p>This area can be customized as needed.</p>
+  </div>
+{% endblock %}
+{% block custom_page_main_section %}
+  <section class="custom-page-main-section">
+    <h2>Custom Page Main Section</h2>
+    <p>This section can be used for any main content.</p>
+  </section>
+{% endblock %}
+{% block custom_page_sidebar_content %}
+  <div class="custom-page-sidebar-content">
+    <h3>Custom Page Sidebar Content</h3>
+    <p>This sidebar can contain additional links or information.</p>
+  </div>
+{% endblock %}
+{% block custom_page_content_area %}
+  <div class="custom-page-content-area">
+    <h2>Custom Page Content Area</h2>
+    <p>This area can be used for any custom page content.</p>
+  </div>
+{% endblock %}
+{% block custom_page_section_area %}
+  <section class="custom-page-section-area">
+    <h2>Custom Page Section Area</h2>
+    <p>This section can be used for any additional content or features.</p>
+  </section>
+{% endblock %}
+{% block custom_page_div_area %}
+  <div class="custom-page-div-area">
+    <h3>Custom Page Div Area</h3>
+    <p>This div can contain any custom HTML or content.</p>
+  </div>
+{% endblock %}
